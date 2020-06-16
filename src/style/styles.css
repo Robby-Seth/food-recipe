@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+#titleContainer h1{
+    font-size: 2em;
+}
+
+header,#titleContainer{
+    padding:5% 0%;
+    text-align: center;
+    margin-bottom: 2%;
+    background-color: rgb(37, 37, 37);
+}
+
+.navTitle {
+    margin:0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#titleContainer{
+    margin: 0;
+}
+
+.mainContent{
+    display: flex;
+}
+
+nav{
+    flex-basis: 25%;
+}
+
+nav ul{
+    padding: 0;
+}
+
+.navTitle{
+    text-align: center;
+    padding-top: 5%;
+}
+
+.searchTitle{
+    text-align: center;
+    margin: 0;
+
+}
+
+#buttonSearch {
+    display: block;
+    margin: 0 auto;
+}
+
+#searchBar{
+    display: block;
+    margin: 3% auto;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 5%;
+
+}
+.menu{
+    font-size: 1rem;
+    text-align: left;
+    padding: 2.5% 0 2.5% 10%;
+    cursor: default;
+}
+
+.menuSearch{
+    padding: 0;
+}
+
+.menu:hover{
+    background-color: rgb(37, 37, 37);
+}
+
+article{
+    flex-basis: 80%;
+    overflow-y: auto;
+    border-top: 5px solid #343a40;
+    border-bottom: 5px solid #343a40;
+    border-right: 5px solid #343a40;
+}
+
+content-list ul{
+    display: flex;
+    padding: 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: default;
+    flex-wrap: wrap;
+}
+
+content-list li{
+    display: inline-block;
+    flex-basis: 23%;
+    padding: 2.5% 0;
+    border: 5px solid rgb(37, 37, 37);
+    border-radius: 10px;
+    margin: 1% 1%;
+    min-width: 23%;
+}
+
+content-list li:hover{
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+
+.previewFood{
+    padding: 0;
+}
+
+content-list img{
+    width: 100%;
+}
+
+.whiteText{
+    color: white;
+}
+
+.darkBackground{
+    background-color: #343a40;
+}
+
+.headerLinks{
+    display:flex;
+}
+
+.headerLinks > h3{
+    margin:0;
+    flex-basis:50%;
+    border:5px solid rgb(37,37,37);
+    background-color: #343a40;
+    color: white;
+    padding: 2%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.headerLinks > h3:hover{
+    color:rgb(37, 37, 37);
+    background-color: white;
+    cursor : default;
+}
+
+.collapseMenu{
+    text-align: center;
+    padding: 2% 0%;
+    margin: 0%;
+    cursor: default;
+}
+
+.aboutPage{
+    display: flex;
+    background-color: rgb(37,37,37);
+    margin: 2% 0;
+    border: 5px solid #343a40;
+}
+
+.aboutPage > img {
+    display: block;
+    flex-basis: 50%;
+    width: 50%;
+    background-color: white;
+}
+
+.aboutPage > a{
+    text-decoration: none;
+    color: white;
+    cursor: default;
+}
+
+.aboutPage > a:hover{
+    color: darkslateblue;
+    text-decoration: none;
+}
+
+#authorMeal{
+    flex-direction: row-reverse;
+}
+
+.aboutPage > p {
+    flex-basis: 50%;
+    color: white;
+    padding: 2% 0% 2% 2%;
+}
+
+#loadingElement{
+    display: inline-block;
+    padding-left: 35%;
+    margin-top: 10%;
+}
+
+#tickElement{
+    display: inline-block;
+}
+   
+
+
+@media screen and (max-width: 1060px){
+    main{
+        display: block;
+    }
+
+    article{
+        flex-basis: 100%;
+        max-width: 100%;
+        border: unset;
+    }
+
+    #searchBar{
+        width: 90%;
+    }
+
+    content-list li{
+        flex-basis: 46%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    h1{
+        font-size: 1.75rem;
+    }
+
+    h2{
+        font-size: 1.25rem;
+    }
+    article{
+        overflow: unset;
+        border: unset;
+    }
+
+    .aboutPage > p {
+        background-color: rgb(37,37,37);
+        border: 5px solid #343a40;
+        color: white;
+        padding: 2% 0% 2% 2%;
+        margin: 0;
+    }
+
+    .aboutPage{
+        display: block;
+        border: unset;
+        background-color: unset;
+    }
+
+    .aboutPage > img {
+        margin-top: 20px;
+        width: 100%;
+        border: 5px solid #343a40;
+    }
+    #navResponsiveContainer{
+        display: block;
+        position: sticky;
+        top:0;
+    }
+
+}
